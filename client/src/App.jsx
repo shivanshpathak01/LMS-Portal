@@ -13,7 +13,7 @@ import MyCourses from './pages/educator/MyCourses'
 import StudentsEnrolled from './pages/educator/StudentsEnrolled'
 import Navbar from './components/student/Navbar'
 
-// 1:30:00
+// 1:42:00
 
 function App() {
 
