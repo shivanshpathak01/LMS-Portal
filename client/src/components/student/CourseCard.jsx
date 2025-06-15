@@ -4,7 +4,7 @@ import { AppContext } from '../../context/AppContext'
 import { Link } from 'react-router-dom'
 
 function CourseCard({course}) {
-// 2:02:00 
+// 2:44:00 
     const {currency, calculateRating} = useContext(AppContext)
 
   return (
