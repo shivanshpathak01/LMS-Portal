@@ -6,6 +6,11 @@
   font-family: Outfit;
 }
 
+@theme {
+  --grid-template-columns-auto: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+
 .course-heading-small {
   font-size: 26px;
   line-height: 36px;
