@@ -12,8 +12,8 @@ import AddCourse from './pages/educator/AddCourse'
 import MyCourses from './pages/educator/MyCourses'
 import StudentsEnrolled from './pages/educator/StudentsEnrolled'
 import Navbar from './components/student/Navbar'
+import "quill/dist/quill.snow.css";
 
-// 1:42:00
 
 function App() {
 
