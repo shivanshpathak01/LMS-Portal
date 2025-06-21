@@ -16,6 +16,7 @@ app.use(cors())
 // Routes
 app.get('/',(req,res)=>res.send("API working!!!"))
 app.post('/clerk', express.json(), clerkwebhooks)
+// app.post('/clerk', express.raw({ type: 'application/json' }), clerkwebhooks)
 
 //Port 
 const PORT = process.env.PORT || 5000
