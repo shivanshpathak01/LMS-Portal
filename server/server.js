@@ -16,7 +16,10 @@ await connectDB()
 await connectCloudinary()
 
 // Middlewares
-app.use(cors())
+app.use(cors({
+  origin: ['https://lms-portal-frontend-sigma.vercel.app', 'http://localhost:3000'],
+  credentials: true
+}))
 app.use(clerkMiddleware())
 
 // Routes
