@@ -176,7 +176,7 @@ function Player() {
                 <p>
                   {playerData.chapter}.{playerData.lecture} {playerData.lectureTitle}
                 </p>
-                <button onClick={() => markLectureAsCompleted(playerData.lectureId)} className='text-blue-600'>{progressData && progressData.lectureCompleted.includes(playerData.lectureId) ? 'Completed' : 'Mark as completed'}</button>
+                <button onClick={() => markLectureAsCompleted(playerData.lecture)} className='text-blue-600'>{progressData && progressData.lectureCompleted.includes(playerData.lecture) ? 'Completed' : 'Mark as completed'}</button>
               </div>
             </div>
           ) :
