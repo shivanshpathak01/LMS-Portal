@@ -53,7 +53,7 @@ function Navbar() {
             <button onClick={becomeEducator}>{isEducator ? 'Educator Dashboard' : 'Become Educator'}</button> | <Link to='/my-enrollments'>My Enrollments</Link></>}
         </div>
         {user ? <UserButton /> :
-          <button onClick={() => openSignIn()} className='bg-blue-600 text-white px-5 py-2 rounded-full'>Create Account</button>}
+          <button onClick={() => openSignIn()} className='bg-blue-600 text-white px-5 py-2 rounded-full'>Create Account / Sign in</button>}
       </div>
       {/* For Phone Screens */}
       <div className='md:hidden flex items-center gap-2 sm:gap-5 text-gray-500'>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { assets } from '../../assets/assets'
 
 function Footer() {
@@ -7,15 +8,15 @@ function Footer() {
       <div className='flex flex-col md:flex-row items-start px-8 md:px-0 justify-center gap-10 md:gap-32 py-10 border-b border-white/30'>
         <div className='flex flex-col md:items-start items-center w-full'>
           <img src={assets.logo_dark} alt="logo" />
-          <p className='mt-6 text-center md:text-left text-sm text-white/80'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, fuga.</p>
+          <p className='mt-6 text-center md:text-left text-sm text-white/80'>Empowering learners worldwide with high-quality online education and professional development courses. Join thousands of students advancing their careers.</p>
         </div>
         <div className='flex flex-col md:items-start items-center w-full'>
           <h2 className='text-white mb-5 font-semibold'>Company</h2>
           <ul className='flex md:flex-col w-full justify-between text-sm text-white/80 md:space-y-2'>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Contact us</a></li>
-            <li><a href="#">Privacy Policy</a></li>
+            <li><Link to="/" className='hover:text-white transition-colors duration-200'>Home</Link></li>
+            <li><Link to="/about-us" className='hover:text-white transition-colors duration-200'>About us</Link></li>
+            <li><Link to="/contact-us" className='hover:text-white transition-colors duration-200'>Contact us</Link></li>
+            <li><Link to="/privacy-policy" className='hover:text-white transition-colors duration-200'>Privacy Policy</Link></li>
           </ul>
         </div>
         <div className='hidden md:flex flex-col items-start w-full'>

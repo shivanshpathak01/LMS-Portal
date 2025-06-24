@@ -6,6 +6,9 @@ import CourseDetails from './pages/student/CourseDetails'
 import MyEnrollments from './pages/student/MyEnrollments'
 import Player from './pages/student/Player'
 import Loading from './components/student/Loading'
+import AboutUs from './pages/AboutUs'
+import ContactUs from './pages/ContactUs'
+import PrivacyPolicy from './pages/PrivacyPolicy'
 import Educator from './pages/educator/Educator'
 import Dashboard from './pages/educator/Dashboard'
 import AddCourse from './pages/educator/AddCourse'
@@ -32,6 +35,11 @@ function App() {
                 <Route path='/my-enrollments' element={<MyEnrollments />} />
                 <Route path='/player/:courseId' element={<Player />} />
                 <Route path='/loading/:path' element={<Loading />} />
+
+                {/* New Pages */}
+                <Route path='/about-us' element={<AboutUs />} />
+                <Route path='/contact-us' element={<ContactUs />} />
+                <Route path='/privacy-policy' element={<PrivacyPolicy />} />
 
                 <Route path='/educator' element={<Educator/>}>
                     <Route path='/educator' element={<Dashboard/>}/>
